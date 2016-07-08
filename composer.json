@@ -1,0 +1,14 @@
+{
+    "name": "matthewbaggett/car-traq",
+    "authors": [
+        {
+            "name": "Matthew Baggett",
+            "email": "matthew@baggett.me"
+        }
+    ],
+    "require": {
+        "react/react": "^0.4.2",
+        "clue/redis-react": "^1.0",
+        "nykopol/gpsd-client": "1.*"
+    }
+}
