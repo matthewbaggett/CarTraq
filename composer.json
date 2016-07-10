@@ -9,6 +9,18 @@
     "require": {
         "react/react": "^0.4.2",
         "clue/redis-react": "^1.0",
-        "nykopol/gpsd-client": "1.*"
+        "nykopol/gpsd-client": "1.*",
+        "raveren/kint": "^1.0",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CarTraq\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CarTraq\\Test\\": "tests/"
+        }
     }
 }
