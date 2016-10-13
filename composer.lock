@@ -233,7 +233,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Johan Desmyter",
+                    "name": "Johan DESMYTER",
                     "email": "johan@etic.yt"
                 }
             ],
@@ -292,16 +292,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
-                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "shasum": ""
             },
             "require": {
@@ -329,6 +329,7 @@
                 }
             ],
             "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
             "keywords": [
                 "http",
                 "http-message",
@@ -337,7 +338,7 @@
                 "request",
                 "response"
             ],
-            "time": "2015-05-04 20:22:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "raveren/kint",
@@ -426,33 +427,31 @@
         },
         {
             "name": "react/child-process",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/child-process.git",
-                "reference": "8bf211533bcbb2034e00528a47400367570dc3d7"
+                "reference": "3ab4f83c6f6c5862f7ca28d999a92d327472a671"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/child-process/zipball/8bf211533bcbb2034e00528a47400367570dc3d7",
-                "reference": "8bf211533bcbb2034e00528a47400367570dc3d7",
+                "url": "https://api.github.com/repos/reactphp/child-process/zipball/3ab4f83c6f6c5862f7ca28d999a92d327472a671",
+                "reference": "3ab4f83c6f6c5862f7ca28d999a92d327472a671",
                 "shasum": ""
             },
             "require": {
                 "evenement/evenement": "~2.0",
                 "php": ">=5.4.0",
                 "react/event-loop": "0.4.*",
-                "react/stream": "0.4.*"
+                "react/stream": "~0.4.2"
+            },
+            "require-dev": {
+                "sebastian/environment": "~1.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "React\\ChildProcess\\": ""
+                    "React\\ChildProcess\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -463,34 +462,29 @@
             "keywords": [
                 "process"
             ],
-            "time": "2014-02-02 01:11:26"
+            "time": "2016-08-01 18:09:48"
         },
         {
             "name": "react/dns",
-            "version": "v0.4.2",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/dns.git",
-                "reference": "62f6201e487df8add209cc42f05ffca33ee1ba05"
+                "reference": "751b3129556e04944f164e3556a20ca6e201e459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/dns/zipball/62f6201e487df8add209cc42f05ffca33ee1ba05",
-                "reference": "62f6201e487df8add209cc42f05ffca33ee1ba05",
+                "url": "https://api.github.com/repos/reactphp/dns/zipball/751b3129556e04944f164e3556a20ca6e201e459",
+                "reference": "751b3129556e04944f164e3556a20ca6e201e459",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
                 "react/cache": "~0.4.0|~0.3.0",
-                "react/promise": "~2.0|~1.1",
+                "react/promise": "~2.1|~1.2",
                 "react/socket": "~0.4.0|~0.3.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "React\\Dns\\": "src"
@@ -505,7 +499,7 @@
                 "dns",
                 "dns-resolver"
             ],
-            "time": "2016-02-24 23:45:36"
+            "time": "2016-08-01 10:09:07"
         },
         {
             "name": "react/event-loop",
@@ -595,16 +589,16 @@
         },
         {
             "name": "react/http-client",
-            "version": "v0.4.10",
+            "version": "v0.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/http-client.git",
-                "reference": "1a37937274cc7bf7ef194381c83f5a4ad5253575"
+                "reference": "f2b902a0e5bc062ffb2ddd9032776bed9ed5d9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/http-client/zipball/1a37937274cc7bf7ef194381c83f5a4ad5253575",
-                "reference": "1a37937274cc7bf7ef194381c83f5a4ad5253575",
+                "url": "https://api.github.com/repos/reactphp/http-client/zipball/f2b902a0e5bc062ffb2ddd9032776bed9ed5d9f0",
+                "reference": "f2b902a0e5bc062ffb2ddd9032776bed9ed5d9f0",
                 "shasum": ""
             },
             "require": {
@@ -618,11 +612,6 @@
                 "react/stream": "0.4.*"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.5-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "React\\HttpClient\\": "src"
@@ -636,7 +625,7 @@
             "keywords": [
                 "http"
             ],
-            "time": "2016-03-21 14:01:16"
+            "time": "2016-10-06 13:08:24"
         },
         {
             "name": "react/promise",
@@ -820,16 +809,16 @@
         },
         {
             "name": "react/stream",
-            "version": "v0.4.3",
+            "version": "v0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream.git",
-                "reference": "305b2328d2a2e157bc13b61a0f5c6e41b666b188"
+                "reference": "fcc9e7cea126962cff303c90c05e2efdcec09a27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/305b2328d2a2e157bc13b61a0f5c6e41b666b188",
-                "reference": "305b2328d2a2e157bc13b61a0f5c6e41b666b188",
+                "url": "https://api.github.com/repos/reactphp/stream/zipball/fcc9e7cea126962cff303c90c05e2efdcec09a27",
+                "reference": "fcc9e7cea126962cff303c90c05e2efdcec09a27",
                 "shasum": ""
             },
             "require": {
@@ -837,6 +826,7 @@
                 "php": ">=5.3.8"
             },
             "require-dev": {
+                "clue/stream-filter": "~1.2",
                 "react/event-loop": "^0.4|^0.3",
                 "react/promise": "^2.0|^1.0"
             },
@@ -845,11 +835,6 @@
                 "react/promise": "^2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.5-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "React\\Stream\\": "src"
@@ -864,7 +849,7 @@
                 "pipe",
                 "stream"
             ],
-            "time": "2015-10-07 18:32:58"
+            "time": "2016-08-22 09:51:07"
         }
     ],
     "packages-dev": [],

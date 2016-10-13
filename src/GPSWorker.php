@@ -25,16 +25,19 @@ class GPSWorker {
         $infos = json_decode($infos);
         $locationRecord = [];
         $locationRecord['time'] = date("Y-m-d H:i:s");
-        $locationRecord['latitude'] = $infos->lat;
-        $locationRecord['longitude'] = $infos->lon;
-        $locationRecord['altitude'] = $infos->alt;
-        $locationRecord['speed'] = $infos->speed;
-        $locationRecord['track'] = $infos->track;
-        $locationRecord['climb'] = $infos->climb;
+
+        $locationRecord['latitude'] = isset($infos->lat) ? $infos->lat : null;
+        $locationRecord['longitude'] = isset($infos->lon) ? $infos->lon : null;
+        $locationRecord['altitude'] = isset($infos->alt) ? $infos->alt : null;
+        $locationRecord['speed'] = isset($infos->speed) ? $infos->speed : null;
+        $locationRecord['track'] = isset($infos->track) ? $infos->track : null;
+        $locationRecord['climb'] = isset($infos->climb) ? $infos->climb : null;
         $this->redis->publish("location", json_encode($locationRecord));
         $this->redis->hmset("current_location", $locationRecord);
         $this->redis->lpush("locations", $locationRecord);
-        echo "Location: ({$locationRecord['latitude']},{$locationRecord['longitude']}) @ {$locationRecord['speed']}mph\n";
+	if($locationRecord['latitude']){
+	        echo "Location: ({$locationRecord['latitude']},{$locationRecord['longitude']}) @ {$locationRecord['speed']}mph\n";
+	}
     }
 
     public function run()
